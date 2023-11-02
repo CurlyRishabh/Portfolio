@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Nav() {
   return (
-		<div className="flex justify-evenly fixed top-0 w-full bg-blue-600">
+		<div className="flex px-2 justify-between fixed top-0 w-full bg-blue-600">
 			<p>RSB</p>
 			<div>Home</div>
 
