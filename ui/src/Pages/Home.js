@@ -2,9 +2,11 @@ import React from 'react';
 import Contact from '../Components/Contact';
 import Type from '../Components/Typewriter';
 import Techstack from '../Components/Techstack';
+import Projects from '../Components/Projects';
 
 //logo
 import logo from "../Media/developer.svg";
+import profile from "../Media/profile.svg";
 import code from "../Media/code.png"
 
 export default function Home() {
@@ -21,28 +23,28 @@ export default function Home() {
 					<Type />
 				</div>
 			</div>
-			<img src={logo} className="w-1/2 h-1/3" />
+			<img src={logo} className="w-1/2" />
 
 			{/* Intro */}
 			<div className="w-full flex flex-wrap text-sm ">
-				<p className="text-2xl font-semibold pb-4">Introduction</p>
+				<p className="text-2xl text-blue-800 font-semibold pb-2">Introduction</p>
 
-				<p className="w-full border-2">
+				<p className="w-full text-blue-950">
 					<p className="">
 						I love creating user-friendly software! I'm skilled in both building the parts you see (the
 						front-end) and the behind-the-scenes work (the back-end).
 					</p>
-					<div className="space-y-2">
-						<ul className="space-y-2">
+					<div>
+						<ul>
 							<li>
-								<h3>UI/UX Focus:</h3>
+								<h3 className="font-mono text-blue-700 font-semibold">UI/UX Focus:</h3>
 								<p>
 									Dedicated to creating visually appealing and user-friendly interfaces that elevate the
 									user experience.
 								</p>
 							</li>
 							<li>
-								<h3>Problem Solver:</h3>
+								<h3 className="font-mono text-blue-700 font-semibold">Problem Solver:</h3>
 								<p>Thrive on overcoming technical challenges and architecting scalable solutions.</p>
 							</li>
 						</ul>
@@ -61,16 +63,18 @@ export default function Home() {
 			</div>
 			{/* Projects */}
 			<div className="w-full items-center flex flex-col my-2">
-				<div className="w-full flex  items-center space-x-4 ">
+				<div className="w-full   items-center space-x-4 ">
 					<p className="font-semibold text-2xl my-4"> My Projects </p>
-					<img src={code} className="w-10" />
 				</div>
+				<Projects />
 			</div>
 
 			{/* Contacts */}
-			<div className="w-full justify-center text-center border-2 ">
-				<img src={logo} className="w-full border-2 h-20" />
-				Find me on
+			<div className="w-full justify-center text-center">
+				<div className="flex justify-center">
+					<img src={profile} className="h-72" />
+				</div>
+				<p className="mt-2 font-semibold  text-blue-800">Find me on</p>
 				<div className="w-full justify-center flex">
 					<Contact h={"h-10"} />
 				</div>
