@@ -11,7 +11,7 @@ import code from "../Media/code.png"
 
 export default function Home() {
   return (
-		<div className="flex flex-wrap w-full space-y-3">
+		<div className="flex flex-wrap w-full space-y-3 md:px-20">
 			{/* main */}
 
 			<div className="pt-10 w-1/2 text-blue-800  text-xl md:text-4xl space-y-2 md:space-y-5 justify-center flex flex-col ">
@@ -26,13 +26,13 @@ export default function Home() {
 			<img src={logo} className="w-1/2" />
 
 			{/* Intro */}
-			<div className="w-full flex flex-wrap text-sm ">
-				<p className="text-2xl text-blue-800 font-semibold pb-2">Introduction</p>
+			<section id="about" className="w-full flex flex-wrap text-sm md:text-lg pt-10">
+				<h1 className="text-2xl md:text-4xl w-full text-blue-800 font-semibold pb-2 text-center ">Introduction</h1>
 
 				<p className="w-full text-blue-950">
 					<p className="">
-						I love creating user-friendly software! I'm skilled in both building the parts you see (the
-						front-end) and the behind-the-scenes work (the back-end).
+						I love creating user-friendly software! I'm skilled in both building the parts you see (front-end)
+						and the behind-the-scenes work (back-end).
 					</p>
 					<div>
 						<ul>
@@ -50,27 +50,24 @@ export default function Home() {
 						</ul>
 					</div>
 				</p>
-			</div>
+			</section>
 			{/* Skills */}
-			<div className="w-full items-center flex flex-col my-2">
-				<div className="w-full flex  items-center space-x-4 ">
-					<p className="font-semibold text-2xl my-4"> Technology Learnt </p>
-					<img src={code} className="w-10" />
-				</div>
-				<div className="w-1/2">
+			<div className="w-full items-center flex flex-col pt-10">
+				<h1 className="w-full text-2xl md:text-4xl  text-blue-800 font-semibold pb-2 text-center ">
+					Technology Learnt
+				</h1>
+				<div className="w-2/3">
 					<Techstack />
 				</div>
 			</div>
 			{/* Projects */}
-			<div className="w-full items-center flex flex-col my-2">
-				<div className="w-full   items-center space-x-4 ">
-					<p className="font-semibold text-2xl my-4"> My Projects </p>
-				</div>
+			<section id="projects" className="w-full items-center flex flex-col pt-10 ">
+				<h1 className="w-full text-2xl md:text-4xl text-blue-800 font-semibold pb-2 text-center">My Projects</h1>
 				<Projects />
-			</div>
+			</section>
 
 			{/* Contacts */}
-			<div className="w-full justify-center text-center">
+			<section id="contact" className="w-full justify-center text-center pt-10 ">
 				<div className="flex justify-center">
 					<img src={profile} className="h-72" />
 				</div>
@@ -78,7 +75,7 @@ export default function Home() {
 				<div className="w-full justify-center flex">
 					<Contact h={"h-10"} />
 				</div>
-			</div>
+			</section>
 		</div>
   );
 }

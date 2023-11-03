@@ -1,41 +1,31 @@
 import React from 'react';
+
 import cssicon from "../Media/Skills/css.svg"
+import cppicon from "../Media/Skills/cpp.svg"
+import htmlicon from "../Media/Skills/html.svg"
+import nodeicon from "../Media/Skills/nodejs.svg"
+import reacticon from "../Media/Skills/react.svg"
+import npmicon from "../Media/Skills/npm.svg"
+
+
+function IconPack(props){
+return (
+	<div className="w-1/5 h-20 flex items-center flex-col">
+		<img className='h-6 hover:h-12 md:h-10' src={props.src} />
+		{props.name}
+	</div>
+);
+}
 
 export default function Techstack() {
   return (
-		<div className=" flex flex-wrap items-center justify-evenly">
-			<div className="w-1/5 text-center">
-				<img src={cssicon} />
-				css
-			</div>
-			<div className="w-1/5 text-center">
-				<img src={cssicon} />
-				css
-			</div>
-			<div className="w-1/5 text-center">
-				<img src={cssicon} />
-				css
-			</div>
-			<div className="w-1/5 text-center">
-				<img src={cssicon} />
-				css
-			</div>
-			<div className="w-1/5 text-center">
-				<img src={cssicon} />
-				css
-			</div>
-			<div className="w-1/5 text-center">
-				<img src={cssicon} />
-				css
-			</div>
-			<div className="w-1/5 text-center">
-				<img src={cssicon} />
-				css
-			</div>
-			<div className="w-1/5 text-center">
-				<img src={cssicon} />
-				css
-			</div>
+		<div className=" flex flex-wrap items-center justify-evenly gap-y-2 text-xs">
+			<IconPack src={htmlicon} name={"HTML"} />
+			<IconPack src={cssicon} name={"CSS"} />
+			<IconPack src={nodeicon} name={"Node"} />
+			<IconPack src={npmicon} name={"NPM"} />
+			<IconPack src={reacticon} name={"React"} />
+			<IconPack src={cppicon} name={"C++"} />
 		</div>
   );
 }
