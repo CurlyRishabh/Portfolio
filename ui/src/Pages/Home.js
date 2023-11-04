@@ -17,7 +17,7 @@ export default function Home() {
 			<div className="pt-10 w-1/2 text-blue-800  text-xl md:text-4xl space-y-2 md:space-y-5 justify-center flex flex-col ">
 				<h1>Hi!</h1>
 				<h1>
-					I'M <strong> Rishabh Singh</strong>
+					I'M <strong> Rishabh Singh Bisht</strong>
 				</h1>
 				<div className="h-20 md:h-40">
 					<Type />
@@ -71,7 +71,7 @@ export default function Home() {
 				<div className="flex justify-center">
 					<img src={profile} className="h-72" />
 				</div>
-				<p className="mt-2 font-semibold  text-blue-800">Find me on</p>
+				<p className="mt-2 text-2xl md:text-3xl font-semibold  text-blue-800">Find me on</p>
 				<div className="w-full justify-center flex">
 					<Contact h={"h-10"} />
 				</div>

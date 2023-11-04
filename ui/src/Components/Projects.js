@@ -1,11 +1,16 @@
 import React from 'react';
 import p1 from "../Media/Projects/E-commerce-M.png";
+import git from "../Media/github.svg"
+import liv from "../Media/code.png"
 
 
-const LinkButton = ({href, text}) => (
+const LinkButton = ({href, text, pic}) => (
 
-	<a href={href} target="_blank">
-		<button className="bg-blue-800 w-20 h-10 hover:bg-blue-950 font-bold text-xl text-white rounded-md">{text}</button>
+	<a href={href}  target="_blank">
+		<div className="flex items-center gap-1 bg-blue-800 w-28 justify-center h-10 hover:bg-blue-950 font-bold text-xl text-white rounded-md">
+		<img src={pic} alt="j" className='w-7 ' />
+			{text}
+		</div>
 	</a>
 );
 
@@ -17,8 +22,8 @@ function List(props){
 				<h1 className="text-xl text-blue-600 font-semibold">{props.title}</h1>
 				<p className="font-mono text-justify text-blue-950 text-lg">{props.desc}</p>
 				<div className="flex justify-center gap-8 ">
-					{props.liveref && <LinkButton href={props.liveref} text="Live" />}
-					{props.gitref && <LinkButton href={props.gitref} text="Github" />}
+					{props.liveref && <LinkButton href={props.liveref} text="Live" pic={liv} />}
+					{props.gitref && <LinkButton href={props.gitref} text="Github" pic={git} />}
 				</div>
 			</div>
 		</div>
