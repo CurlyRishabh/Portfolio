@@ -73,7 +73,7 @@ export default function Nav() {
 	};
 
   return (
-		<nav className="fixed h-10 w-full bg-violet-500 ">
+		<nav className="fixed h-10 w-full bg-violet-500 z-20 ">
 			<Mobile handleClick={toggleMenu} show={showMenu}/>
 			<Desktop />
 		</nav>

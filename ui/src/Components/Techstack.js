@@ -10,8 +10,8 @@ import npmicon from "../Media/Skills/npm.svg"
 
 function IconPack(props){
 return (
-	<div className="w-1/5 h-20 flex items-center flex-col">
-		<img className='h-6 hover:h-12 md:h-10' src={props.src} />
+	<div className="w-1/5 h-12 flex items-center flex-col">
+		<img alt='Th' className='h-6 hover:h-12 md:h-10' src={props.src} />
 		{props.name}
 	</div>
 );
@@ -19,7 +19,7 @@ return (
 
 export default function Techstack() {
   return (
-		<div className=" flex flex-wrap items-center justify-evenly gap-y-2 text-xs">
+		<div className=" flex flex-wrap items-center justify-evenly gap-y-3 md:gap-y-4  text-xs pt-2 md:pt-8">
 			<IconPack src={htmlicon} name={"HTML"} />
 			<IconPack src={cssicon} name={"CSS"} />
 			<IconPack src={nodeicon} name={"Node"} />
