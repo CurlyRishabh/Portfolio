@@ -2,7 +2,8 @@ import React from 'react';
 import Nav from './Components/Nav';
 import Footer from './Components/Footer';
 import Home from './Pages/Home';
-import "./App.css"
+import "./App.css";
+
 import cloud from "./Media/sun.svg";
 
 
@@ -16,6 +17,7 @@ export default function App() {
 				<Home />
 			</div>
 			<Footer />
+			{/* <Resume/> */}
 		</div>
   );
 }

@@ -24,35 +24,36 @@ export default function Home() {
 				</div>
 			</div>
 			<div className="relative w-1/2 ">
-				<img src={logo}  alt="Img" className="mt-10 " />
-				<img src={cloud} alt="Img" className="absolute w-1/2 md:w-1/3  -right-4 md:-right-20 top-6 " />
+				<img src={logo} alt="Img" className="mt-10  " />
+				<img
+					src={cloud}
+					alt="Img"
+					className="absolute w-1/2 md:w-1/3  -right-4 md:-right-20 top-6 horizontal-rotate"
+				/>
 			</div>
 
 			{/* Intro */}
 			<section id="about" className="w-full flex flex-wrap text-sm md:text-lg md:pt-10">
 				<h1 className="text-2xl md:text-4xl w-full text-blue-800 font-semibold pb-2 text-center ">Introduction</h1>
 
-				<p className="w-full text-blue-950">
+				<div className="w-full text-blue-950">
 					<p className="">
 						I love creating user-friendly software! I'm skilled in both building the parts you see (front-end)
 						and the behind-the-scenes work (back-end).
 					</p>
 					<div>
-						<ul>
-							<li>
+						
 								<h3 className="font-mono text-blue-700 font-semibold">UI/UX Focus:</h3>
 								<p>
 									Dedicated to creating visually appealing and user-friendly interfaces that elevate the
 									user experience.
 								</p>
-							</li>
-							<li>
+							
 								<h3 className="font-mono text-blue-700 font-semibold">Problem Solver:</h3>
 								<p>Thrive on overcoming technical challenges and architecting scalable solutions.</p>
-							</li>
-						</ul>
+							
 					</div>
-				</p>
+				</div>
 			</section>
 			{/* Skills */}
 			<div className="w-full items-center flex flex-col pt-4 md:pt-10">

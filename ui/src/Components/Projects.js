@@ -16,9 +16,10 @@ const LinkButton = ({href, text, pic}) => (
 
 function List(props){
     return (
-		<div className="flex flex-col md:flex-row gap-6 justify-center items-center pt-4 md:pt-10">
-			<img className="md:h-56 border-2 bg-slate-800 p-1 border-white rounded-lg" src={props.src} alt="Img" />
-			<div className="flex flex-col text-center justify-between py-2">
+		<div className="flex flex-col lg:flex-row gap-x-6 justify-center items-center pt-4 md:pt-10 ">
+
+			<img className="lg:w-1/3 border-2 bg-slate-800 p-1 border-white rounded-lg" src={props.src} alt="Img" />
+			<div className="flex flex-col lg:h-56 justify-between text-center   ">
 				<h1 className="text-xl text-blue-600 font-semibold">{props.title}</h1>
 				<p className="font-mono text-justify text-blue-950 text-lg">{props.desc}</p>
 				<div className="flex justify-center gap-8 ">
@@ -36,10 +37,10 @@ export default function Projects() {
 			<List
 				title={"Cool Shop"}
 				gitref={"https://github.com/CurlyRishabh/E-commerce"}
-                liveref={"https://curlyrishabh.github.io/E-commerce"}
+				liveref={"https://curlyrishabh.github.io/E-commerce"}
 				src={p1}
 				desc={
-					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dolorem sequi assumenda libero? Doloribus voluptatibus nisi vero hic repellendus error?"
+					"An intuitive shoe e-commerce platform enabling users to shop, add to cart, and seamlessly checkout, offering a user-friendly interface for purchasing various shoe styles online with essential e-commerce features."
 				}
 			/>
 		</div>

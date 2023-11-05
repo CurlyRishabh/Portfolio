@@ -2,3 +2,19 @@ html{
     scroll-behavior:smooth;
     overflow-x: hidden;
 }
+
+.horizontal-rotate {
+  animation: rotateHorizontal 10s linear infinite;
+}
+
+@keyframes rotateHorizontal {
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(-1);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
