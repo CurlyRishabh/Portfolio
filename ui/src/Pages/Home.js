@@ -60,7 +60,7 @@ export default function Home() {
 				<h1 className="w-full text-2xl md:text-4xl  text-blue-800 font-semibold pb-2 text-center ">
 					Technology Learnt
 				</h1>
-				<div className="w-2/3">
+				<div className="w-5/6">
 					<Techstack />
 				</div>
 			</div>
