@@ -4,7 +4,6 @@ import Footer from './Components/Footer';
 import Home from './Pages/Home';
 import "./App.css";
 
-import cloud from "./Media/sun.svg";
 
 
 export default function App() {

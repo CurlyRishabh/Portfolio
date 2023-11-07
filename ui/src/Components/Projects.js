@@ -6,8 +6,8 @@ import liv from "../Media/rocket.png"
 
 const LinkButton = ({href, text, pic}) => (
 	<a href={href} target="_blank" rel="noreferrer">
-		<div className=" flex items-center gap-1 bg-blue-800 w-20 md:w-28 justify-center h-10 hover:bg-blue-950 font-bold text-sm md:text-xl text-white rounded-md border-2">
-			<img src={pic} alt="j" className={`w-7 ${pic === liv ? "horizontal-rotate" : ""}`} />
+		<div className=" flex items-center gap-1 bg-blue-800 w-20 md:w-28 justify-center h-10 hover:bg-blue-950 font-bold text-sm md:text-xl text-white rounded-md border-2 ">
+			<img src={pic} alt="j" className={`w-7 ${pic === liv ? "rotating-image" : ""}`} />
 			{text}
 		</div>
 	</a>

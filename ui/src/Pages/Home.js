@@ -3,7 +3,7 @@ import Contact from '../Components/Contact';
 import Type from '../Components/Typewriter';
 import Techstack from '../Components/Techstack';
 import Projects from '../Components/Projects';
-
+import GitCalender from '../Components/GitCalender';
 //logo
 import logo from "../Media/developer.svg";
 import profile from "../Media/profile.svg";
@@ -42,16 +42,14 @@ export default function Home() {
 						and the behind-the-scenes work (back-end).
 					</p>
 					<div>
-						
-								<h3 className="font-mono text-blue-700 font-semibold">UI/UX Focus:</h3>
-								<p>
-									Dedicated to creating visually appealing and user-friendly interfaces that elevate the
-									user experience.
-								</p>
-							
-								<h3 className="font-mono text-blue-700 font-semibold">Problem Solver:</h3>
-								<p>Thrive on overcoming technical challenges and architecting scalable solutions.</p>
-							
+						<h3 className="font-mono text-blue-700 font-semibold">UI/UX Focus:</h3>
+						<p>
+							Dedicated to creating visually appealing and user-friendly interfaces that elevate the user
+							experience.
+						</p>
+
+						<h3 className="font-mono text-blue-700 font-semibold">Problem Solver:</h3>
+						<p>Thrive on overcoming technical challenges and architecting scalable solutions.</p>
 					</div>
 				</div>
 			</section>
@@ -65,12 +63,14 @@ export default function Home() {
 				</div>
 			</div>
 			{/* Projects */}
-			<section
-				id="projects"
-				className="transition duration-1000 ease-in-out w-full items-center flex flex-col pt-4 md:pt-10 "
-			>
+			<section id="projects" className=" w-full items-center flex flex-col pt-4 md:pt-10 ">
 				<h1 className="w-full text-2xl md:text-4xl text-blue-800 font-semibold pb-2 text-center">My Projects</h1>
 				<Projects />
+			</section>
+			{/* github */}
+			<section className="w-full  flex flex-col pt-4 md:pt-10 relative">
+				<h1 className="w-full text-2xl md:text-4xl text-blue-800 font-semibold pb-2 text-center">Days I <strong>Code</strong></h1>
+				<GitCalender />
 			</section>
 
 			{/* Contacts */}
